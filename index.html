@@ -8,6 +8,87 @@
     <!-- Material Icons de Google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            z-index: 1000;
+        }
+
+        .modal-overlay.is-open {
+            display: flex;
+        }
+
+        .modal-card {
+            background: #fff;
+            width: min(520px, 100%);
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            padding: 24px;
+            position: relative;
+        }
+
+        .modal-title {
+            margin: 0 0 8px 0;
+            font-size: 1.4rem;
+        }
+
+        .modal-subtitle {
+            margin: 0 0 20px 0;
+            color: #5a5a5a;
+        }
+
+        .contact-options {
+            display: grid;
+            gap: 12px;
+        }
+
+        .contact-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 14px 16px;
+            border: 1px solid #e3e3e3;
+            border-radius: 12px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .contact-option:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-option-name {
+            font-weight: 600;
+        }
+
+        .contact-option-number {
+            color: #5a5a5a;
+            font-size: 0.95rem;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+        }
+
+        .modal-close .material-icons {
+            font-size: 22px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -118,17 +199,49 @@
                     <p>Consultanos por presupuestos personalizados, encargos especiales o cualquier duda que tengas.</p>
                 </div>
                 <div class="contact-action">
-                    <a href="https://wa.me/542615961236?text=Hola!%20Me%20interesa%20conocer%20más%20sobre%20sus%20trabajos%20en%20madera"
-                       target="_blank"
-                       class="btn btn-whatsapp">
+                    <button type="button"
+                            class="btn btn-whatsapp"
+                            id="whatsappModalOpen">
                         <span class="material-icons whatsapp-icon">chat</span>
                         Escribinos por WhatsApp
-                    </a>
-                    <p class="contact-phone">+54 261 596-1236</p>
+                    </button>
+                    <p class="contact-phone">Elegí un número para continuar por WhatsApp</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="modal-overlay" id="whatsappModal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="whatsappModalTitle">
+            <button class="modal-close" type="button" id="whatsappModalClose" aria-label="Cerrar">
+                <span class="material-icons">close</span>
+            </button>
+            <h3 class="modal-title" id="whatsappModalTitle">¿Con quién querés hablar?</h3>
+            <p class="modal-subtitle">Elegí a un artesano para contarle sobre tu proyecto</p>
+            <div class="contact-options">
+                <a class="contact-option"
+                   href="https://wa.me/5492615931236?text=Hola!%20Me%20interesa%20conocer%20más%20sobre%20sus%20trabajos%20en%20madera"
+                   target="_blank"
+                   rel="noopener">
+                    <div>
+                        <div class="contact-option-name">Roberto Salguero</div>
+                        <div class="contact-option-number">+54 9 2615 93-1236</div>
+                    </div>
+                    <span class="material-icons">chat</span>
+                </a>
+                <a class="contact-option"
+                   href="https://wa.me/5492613262318?text=Hola!%20Me%20interesa%20conocer%20más%20sobre%20sus%20trabajos%20en%20madera"
+                   target="_blank"
+                   rel="noopener">
+                    <div>
+                        <div class="contact-option-name">Hector Stember</div>
+                        <div class="contact-option-number">+54 9 2613 26-2318</div>
+                    </div>
+                    <span class="material-icons">chat</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -139,5 +252,33 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        const whatsappModal = document.getElementById('whatsappModal');
+        const whatsappModalOpen = document.getElementById('whatsappModalOpen');
+        const whatsappModalClose = document.getElementById('whatsappModalClose');
+
+        const openWhatsappModal = () => {
+            whatsappModal.classList.add('is-open');
+            whatsappModal.setAttribute('aria-hidden', 'false');
+        };
+
+        const closeWhatsappModal = () => {
+            whatsappModal.classList.remove('is-open');
+            whatsappModal.setAttribute('aria-hidden', 'true');
+        };
+
+        whatsappModalOpen.addEventListener('click', openWhatsappModal);
+        whatsappModalClose.addEventListener('click', closeWhatsappModal);
+        whatsappModal.addEventListener('click', (event) => {
+            if (event.target === whatsappModal) {
+                closeWhatsappModal();
+            }
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeWhatsappModal();
+            }
+        });
+    </script>
 </body>
 </html>
