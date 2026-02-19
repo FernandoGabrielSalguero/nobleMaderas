@@ -1,0 +1,38 @@
+📸 CARPETA DE IMÁGENES DEL CARRUSEL
+=====================================
+
+Esta carpeta debe contener las imágenes que se mostrarán en el carrusel de la página de inicio.
+
+⚠️ NOMENCLATURA OBLIGATORIA (usar exactamente este formato):
+------------------------------------------------------------
+carrusel_madera_1.jpg
+carrusel_madera_2.jpg
+carrusel_madera_3.jpg
+carrusel_madera_4.jpg
+...
+carrusel_madera_20.jpg
+
+IMPORTANTE:
+- Usar EXACTAMENTE este formato: carrusel_madera_X.jpg
+- Extensión: .jpg (minúscula)
+- Números consecutivos empezando desde 1
+- No usar otros nombres, el sistema no los detectará
+
+ESPECIFICACIONES:
+-----------------
+✅ Formato: JPG, JPEG, PNG
+✅ Resolución recomendada: 1920 x 800 píxeles (proporción 12:5)
+✅ Peso máximo: 500 KB por imagen (comprimidas para web)
+✅ Orientación: Horizontal/Landscape
+✅ Cantidad: Entre 3 y 8 imágenes
+
+CONSEJOS:
+---------
+• Usa imágenes de alta calidad de tus mejores trabajos
+• Asegúrate de que tengan buena iluminación
+• Evita imágenes muy oscuras o desenfocadas
+• Puedes usar herramientas como TinyPNG para comprimir sin perder calidad
+
+El carrusel cambiará automáticamente cada 4 segundos.
+
+🌳 Noble Madera

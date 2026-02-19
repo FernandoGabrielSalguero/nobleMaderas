@@ -1,0 +1,39 @@
+📸 CARPETA DE IMÁGENES DE TRABAJOS
+====================================
+
+Esta carpeta debe contener las imágenes de tus trabajos realizados que se mostrarán en la galería.
+
+⚠️ NOMENCLATURA OBLIGATORIA (usar exactamente este formato):
+------------------------------------------------------------
+trabajo1.jpeg
+trabajo2.jpeg
+trabajo3.jpeg
+trabajo4.jpeg
+...
+trabajo50.jpeg
+
+IMPORTANTE:
+- Usar EXACTAMENTE este formato: trabajoX.jpeg
+- Extensión: .jpeg (minúscula)
+- Números consecutivos empezando desde 1
+- No usar otros nombres, el sistema no los detectará
+
+ESPECIFICACIONES:
+-----------------
+✅ Formato: JPG, JPEG, PNG
+✅ Resolución recomendada: 800 x 800 píxeles (cuadradas)
+✅ Peso máximo: 300 KB por imagen
+✅ Orientación: Preferentemente cuadrada (1:1)
+✅ Cantidad: Ilimitada (recomendado: 6-20 imágenes)
+
+CONSEJOS:
+---------
+• Muestra variedad de productos: mesas, estantes, decoraciones, etc.
+• Usa fondos neutros para destacar el trabajo
+• Iluminación natural o profesional
+• Fotos desde diferentes ángulos del mismo producto
+• Incluye detalles de la madera y acabados
+
+Las imágenes se mostrarán en una cuadrícula responsive que se adapta a cualquier dispositivo.
+
+🌳 Noble Madera

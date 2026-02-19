@@ -1,0 +1,45 @@
+📸 CARPETA DE IMAGEN DEL EQUIPO
+=================================
+
+Esta carpeta debe contener la imagen del equipo/taller que se mostrará en la sección "Quiénes Somos".
+
+⚠️ NOMENCLATURA OBLIGATORIA (usar exactamente este formato):
+------------------------------------------------------------
+equipo1.jpg
+
+(Si tienes varias imágenes para rotar en el futuro):
+equipo2.jpg
+equipo3.jpg
+...
+
+IMPORTANTE:
+- Usar EXACTAMENTE este formato: equipoX.jpg
+- Extensión: .jpg (minúscula)
+- Números consecutivos empezando desde 1
+- Solo se mostrará la PRIMERA imagen encontrada
+- No usar otros nombres, el sistema no los detectará
+
+ESPECIFICACIONES:
+-----------------
+✅ Formato: JPG, JPEG, PNG
+✅ Resolución recomendada: 800 x 600 píxeles (proporción 4:3)
+✅ Peso máximo: 400 KB
+✅ Orientación: Horizontal
+
+SUGERENCIAS DE CONTENIDO:
+-------------------------
+• Foto del taller/espacio de trabajo
+• Retrato del artesano/equipo
+• Imagen trabajando en alguna pieza
+• Foto con herramientas y materiales
+
+CONSEJOS:
+---------
+• Usa buena iluminación
+• Fondo ordenado y profesional
+• Muestra la esencia del emprendimiento
+• Puede ser una foto casual pero de calidad
+
+Esta imagen ayuda a humanizar el emprendimiento y generar confianza con los clientes.
+
+🌳 Noble Madera
